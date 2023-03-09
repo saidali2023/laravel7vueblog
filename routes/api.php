@@ -3,6 +3,10 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+
+use App\Http\Controllers\API\RegisterController;
+use App\Http\Controllers\API\ProductController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,6 +23,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 // Route::get('posts', 'PostController@index');
 
+
+Route::post('registers', [RegisterController::class, 'register']);
+Route::post('logins', [RegisterController::class, 'login']);
 
 Route::apiResource('posts','PostController');
 Route::apiResource('categories','CategoryController');

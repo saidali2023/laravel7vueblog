@@ -24,7 +24,6 @@ Route::get('/', 'HomeController@index')->name('home');
 /* Route::get('post/{slug}',function(){
     return view('blog_post');
 }); */
-feiorjfre foerijfer foerijfr
 Route::get('{any}',function($any){
     return view('home');
 })->where('any','.*');

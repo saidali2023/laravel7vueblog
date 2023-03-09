@@ -13,7 +13,7 @@ const routes = [
     { path: '/', component: Post, name: 'Post' },
     { path: '/post/:slug', component: PostDetails, name: 'PostDetails' },
     { path: '/category/:slug/posts', component: CategoryPosts, name: 'CategoryPosts' },
-    { path: '/admin', component: AdminIndex, name: 'AdminIndex' },
+    { path: '/adminssss', component: AdminIndex, name: 'AdminIndex' },
 ];
 
 const router = new VueRouter({
